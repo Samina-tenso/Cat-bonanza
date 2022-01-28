@@ -1,0 +1,19 @@
+#contentGrid{
+ box-sizing: border-box;
+  display:grid; 
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+  grid-template-rows: 1fr 1fr; 
+  gap: 1em; 
+  margin-top: 1em;
+}
+
+img{
+    
+    width:100%;
+    height: 100%;
+    object-fit:cover; 
+    object-position: center; 
+  
+
+}
+
