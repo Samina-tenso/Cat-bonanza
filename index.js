@@ -10,6 +10,9 @@ let page = 0;
 let limit = 12;
 let order = "asc"
 
+const currentPage = document.querySelector("h2")
+currentPage.textContent = `Showing page: ${page}`
+
 function deleteCats() {
 
     document.getElementById("contentGrid").remove()
@@ -28,6 +31,8 @@ function buttonState() {
 
 prevButton.addEventListener("click", function () {
     page--
+    currentPage.textContent = `Showing page: ${page}`
+
     deleteCats()
     getCat()
 })
@@ -35,6 +40,7 @@ prevButton.addEventListener("click", function () {
 
 nextButton.addEventListener("click", function () {
     page++
+    currentPage.textContent = `Showing page: ${page}`
     console.log("i clicked")
     deleteCats()
     getCat()
