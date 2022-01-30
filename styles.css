@@ -1,4 +1,4 @@
-#contentGrid{
+#content-grid{
  box-sizing: border-box;
   display:grid; 
   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
