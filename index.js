@@ -73,7 +73,6 @@ function getCats(data) {
 
         contentGrid.append(img)
 
-
     };
 }
 
